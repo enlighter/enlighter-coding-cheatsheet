@@ -21,3 +21,12 @@ std::vector<char> path;
 for (std::vector<char>::const_iterator i = path.begin(); i != path.end(); ++i)
     std::cout << *i << ' ';
 >
+
+converting an int array to string
+
+string int_array_to_string(int int_array[], int size_of_array) {
+  string returnstring = "";
+  for (int temp = 0; temp < size_of_array; temp++)
+    returnstring += itoa(int_array[temp]);
+  return returnstring;
+}
