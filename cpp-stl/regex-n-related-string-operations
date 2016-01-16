@@ -1,0 +1,23 @@
+in c++ stl, use c++>4.9 with -std=c++11 flag while compiling
+
+use EMCAScript syntax for defining regular expressions
+
+C++: Splitting a string by a character:
+<
+std::stringstream test("this_is_a_test_string");
+std::string segment;
+std::vector<std::string> seglist;
+
+while(std::getline(test, segment, '_'))
+{
+   seglist.push_back(segment);
+}
+>
+
+Printing a vector(vector iteration):
+<
+std::vector<char> path;
+// ...
+for (std::vector<char>::const_iterator i = path.begin(); i != path.end(); ++i)
+    std::cout << *i << ' ';
+>
